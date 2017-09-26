@@ -1,0 +1,8 @@
+module TTCN_Templates {
+
+  import from TTCN_Declarations all;
+
+  template cafe cafe_msc_distrib_test2LINK22 := ?;
+  template deuxF deuxF_msc_distrib_test2LINK26 := ?;
+  template unF unF_msc_distrib_test2LINK23 := ?;
+}

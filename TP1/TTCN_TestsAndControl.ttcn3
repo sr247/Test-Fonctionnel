@@ -1,0 +1,37 @@
+module TTCN_TestsAndControl
+  {
+  import from TTCN_Declarations all;
+
+  import from TTCN_Templates all;
+
+
+  altstep RTDS_fail() runs on runsOn_distrib_sys
+    {
+    []c1.receive
+      {
+      setverdict(fail, "Fail in default altstep!");
+      stop;
+      };
+    }
+
+  testcase TC_msc_distrib_test2() runs on runsOn_distrib_sys system distrib_sys
+    {
+    activate(RTDS_fail());
+    map(self:c1, system:c1);
+    c1.send(unF_msc_distrib_test2LINK23);
+    c1.receive(cafe_msc_distrib_test2LINK22);
+    c1.send(unF_msc_distrib_test2LINK23);
+    c1.send(unF_msc_distrib_test2LINK23);
+    c1.receive(cafe_msc_distrib_test2LINK22);
+    c1.send(unF_msc_distrib_test2LINK23);
+    c1.send(deuxF_msc_distrib_test2LINK26);
+    c1.receive(cafe_msc_distrib_test2LINK22);
+    c1.receive(unF_msc_distrib_test2LINK23);
+    setverdict(pass);
+    }
+
+  control
+    {
+    execute(TC_msc_distrib_test2());
+    }
+  }

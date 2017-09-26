@@ -1,0 +1,69 @@
+
+
+==============================
+project /home/tp-home008/sromany/Documents/2017-2018/TF/M2-Test-Fonctionnel/TP2/bitAlt.rdp
+22/09/17 at 16:00 : Simulation started
+22/09/17 at 16:05 : simulation ended
+
+
+==============================
+project /home/tp-home008/sromany/Documents/2017-2018/TF/M2-Test-Fonctionnel/TP2/bitAlt.rdp
+22/09/17 at 16:06 : Simulation started
+22/09/17 at 16:07 : simulation ended
+
+
+==============================
+project /home/tp-home008/sromany/Documents/2017-2018/TF/M2-Test-Fonctionnel/TP2/bitAlt.rdp
+22/09/17 at 16:09 : Simulation started
+22/09/17 at 16:09 : simulation ended
+
+
+==============================
+project /home/tp-home008/sromany/Documents/2017-2018/TF/M2-Test-Fonctionnel/TP2/bitAlt.rdp
+22/09/17 at 16:12 : Simulation started
+22/09/17 at 16:18 : simulation ended
+
+
+==============================
+project /home/tp-home008/sromany/Documents/2017-2018/TF/M2-Test-Fonctionnel/TP2/bitAlt.rdp
+22/09/17 at 16:19 : Simulation started
+22/09/17 at 16:21 : simulation ended
+
+
+==============================
+project /home/tp-home008/sromany/Documents/2017-2018/TF/M2-Test-Fonctionnel/TP2/bitAlt.rdp
+22/09/17 at 16:21 : Simulation started
+22/09/17 at 16:21 : simulation ended
+
+
+==============================
+project /home/tp-home008/sromany/Documents/2017-2018/TF/M2-Test-Fonctionnel/TP2/bitAlt.rdp
+22/09/17 at 16:23 : Simulation started
+22/09/17 at 16:27 : simulation ended
+
+
+==============================
+project /home/tp-home008/sromany/Documents/2017-2018/TF/M2-Test-Fonctionnel/TP2/bitAlt.rdp
+22/09/17 at 16:28 : Simulation started
+22/09/17 at 16:28 : module 'TTCN_TestsAndControl' testcase 'TC_msc_bitAlt_test' verdict 'pass'
+22/09/17 at 16:28 : module 'TTCN_TestsAndControl' control part verdict 'pass'
+22/09/17 at 16:30 : module 'TTCN_TestsAndControl' testcase 'TC_msc_bitAlt_test' verdict 'error'
+22/09/17 at 16:30 : module 'TTCN_TestsAndControl' control part verdict 'error'
+22/09/17 at 16:30 : module 'TTCN_TestsAndControl' testcase 'TC_msc_bitAlt_test' verdict 'error'
+22/09/17 at 16:30 : module 'TTCN_TestsAndControl' control part verdict 'error'
+22/09/17 at 16:32 : simulation stopped
+22/09/17 at 16:32 : simulation stopped
+22/09/17 at 16:32 : control part started
+22/09/17 at 16:32 : module 'TTCN_TestsAndControl' testcase 'TC_msc_bitAlt_test' verdict 'pass'
+22/09/17 at 16:32 : module 'TTCN_TestsAndControl' control part verdict 'error'
+22/09/17 at 16:32 : control part started
+22/09/17 at 16:32 : module 'TTCN_TestsAndControl' testcase 'TC_msc_bitAlt_test' verdict 'pass'
+22/09/17 at 16:32 : module 'TTCN_TestsAndControl' control part verdict 'error'
+22/09/17 at 16:32 : control part started
+22/09/17 at 16:32 : module 'TTCN_TestsAndControl' testcase 'TC_msc_bitAlt_test' verdict 'pass'
+22/09/17 at 16:32 : module 'TTCN_TestsAndControl' control part verdict 'error'
+22/09/17 at 16:32 : control part started
+22/09/17 at 16:32 : module 'TTCN_TestsAndControl' testcase 'TC_msc_bitAlt_test' verdict 'pass'
+22/09/17 at 16:32 : module 'TTCN_TestsAndControl' control part verdict 'error'
+22/09/17 at 16:32 : simulation stopped
+22/09/17 at 16:32 : simulation ended

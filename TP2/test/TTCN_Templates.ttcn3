@@ -1,0 +1,7 @@
+module TTCN_Templates {
+
+  import from TTCN_Declarations all;
+
+  template PUT PUT_msc_bitAlt_testLINK0 := ?;
+  template GET GET_msc_bitAlt_testLINK3 := ?;
+}

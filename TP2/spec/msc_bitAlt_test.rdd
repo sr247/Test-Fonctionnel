@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<Diagram language="none" type="msc" defaultColorsNeedFixing="FALSE" name="msc_bitAlt_test" showMsgData="full" linksCrossingAllowed="FALSE" cellWidthMm="4">
+
+<DiagramPartition name="Part. 0" nbPagesH="1" nbPagesV="1">
+<PageSpecification pageWidth="21.0" pageHeight="29.7" topMargin="0.0" bottomMargin="0.0" leftMargin="0.0" rightMargin="0.0" pageFooter="FALSE"/>
+
+<Symbol symbolId="SYMB1" type="mscExternalFrm" xCenter="297" yCenter="420" fixedDimensions="TRUE" width="551" height="775" color="-" fillColor="-">
+<Description></Description>
+<Text></Text>
+
+<Symbol symbolId="SYMB2" type="mscLifeline" xCenter="253" yCenter="406" fixedDimensions="FALSE" width="88" height="724" color="#000000" fillColor="#C4EFED" dies="FALSE">
+<Description></Description>
+<Text>RTDS_Env
+</Text>
+<LifelineComponent type="norm" height="724" color="#000000"/>
+</Symbol>
+
+<Symbol symbolId="SYMB3" type="mscLifeline" xCenter="404" yCenter="404" fixedDimensions="FALSE" width="82" height="698" color="#000000" fillColor="#C4EFED" dies="FALSE">
+<Description></Description>
+<Text>send_proc
+</Text>
+<LifelineComponent type="norm" height="698" color="#000000"/>
+</Symbol>
+
+<Symbol symbolId="SYMB4" type="mscLifeline" xCenter="77" yCenter="407" fixedDimensions="FALSE" width="88" height="704" color="#000000" fillColor="#C4EFED" dies="FALSE">
+<Description></Description>
+<Text>recv_proc
+</Text>
+<LifelineComponent type="norm" height="704" color="#000000"/>
+</Symbol>
+</Symbol>
+
+<Link linkId="LINK0" type="msg" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>PUT
+</Text>
+<Connector attachedSymbolId="SYMB2" type="mscvoid" isOutside="TRUE" side="y" position="-0.726519337017" endType="voidend">
+<Text id="1"></Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB3" type="mscvoid" isOutside="TRUE" side="y" position="-0.716332378223" endType="arrow">
+<Text id="1"></Text>
+<Text id="2"></Text>
+</Connector>
+
+</Link>
+
+<Link linkId="LINK3" type="msg" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Text>GET
+</Text>
+<Connector attachedSymbolId="SYMB4" type="mscvoid" isOutside="TRUE" side="y" position="-0.46875" endType="voidend">
+<Text id="1"></Text>
+<Text id="2"></Text>
+</Connector>
+<Connector attachedSymbolId="SYMB2" type="mscvoid" isOutside="TRUE" side="y" position="-0.39226519337" endType="arrow">
+<Text id="1"></Text>
+<Text id="2"></Text>
+</Connector>
+
+</Link>
+</DiagramPartition>
+
+</Diagram>

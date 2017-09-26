@@ -1,0 +1,36 @@
+module TTCN_TestsAndControl
+  {
+  import from TTCN_Declarations all;
+
+  import from TTCN_Templates all;
+
+
+  altstep RTDS_fail() runs on runsOn_bitAlt_sys
+    {
+    []c3.receive
+      {
+      setverdict(fail, "Fail in default altstep!");
+      stop;
+      };
+    []c2.receive
+      {
+      setverdict(fail, "Fail in default altstep!");
+      stop;
+      };
+    }
+
+  testcase TC_msc_bitAlt_test() runs on runsOn_bitAlt_sys system bitAlt_sys
+    {
+    activate(RTDS_fail());
+    map(self:c3, system:c3);
+    map(self:c2, system:c2);
+    c2.send(PUT_msc_bitAlt_testLINK0);
+    c3.receive(GET_msc_bitAlt_testLINK3);
+    setverdict(pass);
+    }
+
+  control
+    {
+    execute(TC_msc_bitAlt_test());
+    }
+  }

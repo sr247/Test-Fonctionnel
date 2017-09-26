@@ -1,0 +1,27 @@
+module TTCN_Declarations {
+
+  // Records declaration
+  type enumerated cafe { e_cafe }
+
+  type enumerated deuxF { e_deuxF }
+
+  type enumerated unF { e_unF }
+
+  // Ports declaration
+  type port port_c1 message
+    {
+    out deuxF;
+    out unF;
+    in unF;
+    in cafe;
+    }
+
+  // TSI and MTC component declaration
+  type component runsOn_distrib_sys {
+    port port_c1 c1;
+  }
+
+  type component distrib_sys {
+    port port_c1 c1;
+  }
+}
