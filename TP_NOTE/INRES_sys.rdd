@@ -11,11 +11,11 @@
 <Description></Description>
 <Text></Text>
 
-<Symbol symbolId="SYMB2" type="sdlText" xCenter="1034" yCenter="66" fixedDimensions="FALSE" width="198" height="88" color="#000000" fillColor="#FFFFFF">
+<Symbol symbolId="SYMB2" type="sdlText" xCenter="935" yCenter="66" fixedDimensions="FALSE" width="220" height="88" color="#000000" fillColor="#FFFFFF">
 <Description></Description>
 <Text>newtype montype
-operators
-op: boolean -&gt; boolean;
+  operators
+  op: boolean -&gt; boolean;
 endnewtype montype;
 </Text>
 </Symbol>
@@ -31,7 +31,7 @@ SIGNAL IDISreq, IDISind;
 </Text>
 </Symbol>
 
-<Symbol symbolId="SYMB4" type="sdlText" xCenter="1001" yCenter="418" fixedDimensions="FALSE" width="242" height="286" color="#000000" fillColor="#FFFFFF">
+<Symbol symbolId="SYMB4" type="sdlText" xCenter="946" yCenter="440" fixedDimensions="FALSE" width="242" height="286" color="#000000" fillColor="#FFFFFF">
 <Description></Description>
 <Text>NEWTYPE ISDUType
   LITERALS data1;
