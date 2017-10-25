@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Diagram SYSTEM "rtdsDiagram.dtd">
+
+<MscDiagram message_params_visibility="full">
+<LifelineOrdering identifiers="LIFELINEID_1 LIFELINEID_2 LIFELINEID_3 LIFELINEID_4 LIFELINEID_5"/>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="PROCESS_START" color="#000000" text="Initiator_proc
+(1)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="PROCESS_START" color="#000000" text="Medium1_proc
+(2)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="PROCESS_START" color="#000000" text="Medium2_proc
+(3)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="PROCESS_START" color="#000000" text="Responder_proc
+(4)" text_size="0 -" background="-"/>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="PROCESS_START" color="#000000" text="RTDS_Env
+(-1)" text_size="0 -" background="-"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM2" identifier="COND1" background="-" text="idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="idle" identifier="COND1" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM3" identifier="COND2" background="-" text="begin"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="begin" identifier="COND2" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM3"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM2" identifier="COND3" background="-" text="begin"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="begin" identifier="COND3" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM2"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM3" identifier="COND4" background="-" text="idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="idle" identifier="COND4" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM3"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="#000000" text="ICONreq" identifier="MSG1"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM3" identifier="MSG1" text="ICONreq"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM4" identifier="MSG2" text="MDATreqR(|{param1|=|{id|=cr|,num|=0|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="TIMER_START" color="#ffffff" text="time_cr(5)" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM19"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM7" identifier="COND5" background="-" text="wait_dest"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="wait_dest" identifier="COND5" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM7"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM4" identifier="MSG2" text="MDATreqR(|{param1|=|{id|=cr|,num|=0|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_2" event_type="OPERATION_CALL" color="#000000" text="op(|{param1|=1|})" identifier="_LINK_48"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_2" event_type="OPERATION_RETURN" color="#000000" text="0" identifier="_LINK_49"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM10" identifier="MSG3" text="MDATindR(|{param1|=|{id|=cr|,num|=0|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM11" identifier="COND6" background="-" text="begin"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="begin" identifier="COND6" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM11"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM4" identifier="MSG3" text="MDATindR(|{param1|=|{id|=cr|,num|=0|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM19" identifier="MSG4" text="ICONind()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="#000000" text="ICONind()" identifier="MSG4"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM21" identifier="COND7" background="-" text="wait_user"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="wait_user" identifier="COND7" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM21"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="#000000" text="ICONresp" identifier="MSG5"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM23" identifier="MSG5" text="ICONresp"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM33" identifier="MSG6" text="MDATreqI(|{param1|=|{id|=cc|,num|=0|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM34" identifier="COND8" background="-" text="idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="idle" identifier="COND8" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM34"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM3" identifier="MSG6" text="MDATreqI(|{param1|=|{id|=cc|,num|=0|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_3" event_type="OPERATION_CALL" color="#000000" text="op(|{param1|=1|})" identifier="_LINK_50"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_3" event_type="OPERATION_RETURN" color="#000000" text="0" identifier="_LINK_51"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM10" identifier="MSG7" text="MDATindI(|{param1|=|{id|=cc|,num|=0|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM11" identifier="COND9" background="-" text="begin"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="begin" identifier="COND9" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM11"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM9" identifier="MSG7" text="MDATindI(|{param1|=|{id|=cc|,num|=0|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="TIMER_CANCEL" color="#ffffff" text="time_cr" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM25"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM13" identifier="MSG8" text="ICONconf()"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="#000000" text="ICONconf()" identifier="MSG8"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM16" identifier="COND10" background="-" text="data_transfert"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="data_transfert" identifier="COND10" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM16"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_SEND" color="#000000" text="IDATreq(|{param1|=data1|})" identifier="MSG9"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM31" identifier="MSG9" text="IDATreq(|{param1|=data1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM32" identifier="MSG10" text="MDATreqR(|{param1|=|{id|=dt|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="TIMER_START" color="#ffffff" text="time_ak(5)" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM35"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM34" identifier="COND11" background="-" text="wait_dest"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="wait_dest" identifier="COND11" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM34"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM4" identifier="MSG10" text="MDATreqR(|{param1|=|{id|=dt|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_2" event_type="OPERATION_CALL" color="#000000" text="op(|{param1|=1|})" identifier="_LINK_52"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_2" event_type="OPERATION_RETURN" color="#000000" text="0" identifier="_LINK_53"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM10" identifier="MSG11" text="MDATindR(|{param1|=|{id|=dt|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM11" identifier="COND12" background="-" text="begin"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="begin" identifier="COND12" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM11"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM4" identifier="MSG11" text="MDATindR(|{param1|=|{id|=dt|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM37" identifier="COND13" background="-" text="data_transfert"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="data_transfert" identifier="COND13" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM37"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM49" identifier="MSG12" text="IDATind(|{param1|=data1|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5" event_type="MESSAGE_RECEIVE" color="#000000" text="IDATind(|{param1|=data1|})" identifier="MSG12"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM51" identifier="MSG13" text="MDATreqI(|{param1|=|{id|=ak|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM50" identifier="COND14" background="-" text="idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="idle" identifier="COND14" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM50"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM3" identifier="MSG13" text="MDATreqI(|{param1|=|{id|=ak|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_3" event_type="OPERATION_CALL" color="#000000" text="op(|{param1|=1|})" identifier="_LINK_54"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_3" event_type="OPERATION_RETURN" color="#000000" text="1" identifier="_LINK_55"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="0"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM9" identifier="COND15" background="-" text="begin"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="begin" identifier="COND15" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM9"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="TIMER_TIMEOUT" color="#ffffff" text="time_ak" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM43"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM32" identifier="MSG14" text="MDATreqR(|{param1|=|{id|=dt|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="TIMER_START" color="#ffffff" text="time_ak(5)" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM35"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM34" identifier="COND16" background="-" text="wait_dest"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="wait_dest" identifier="COND16" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM34"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM4" identifier="MSG14" text="MDATreqR(|{param1|=|{id|=dt|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_2" event_type="OPERATION_CALL" color="#000000" text="op(|{param1|=1|})" identifier="_LINK_56"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_2" event_type="OPERATION_RETURN" color="#000000" text="0" identifier="_LINK_57"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM10" identifier="MSG15" text="MDATindR(|{param1|=|{id|=dt|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM11" identifier="COND17" background="-" text="begin"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="begin" identifier="COND17" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM11"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM4" identifier="MSG15" text="MDATindR(|{param1|=|{id|=dt|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM37" identifier="COND18" background="-" text="data_transfert"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="data_transfert" identifier="COND18" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM37"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM52" identifier="MSG16" text="MDATreqI(|{param1|=|{id|=ak|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM63" identifier="COND19" background="-" text="idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="idle" identifier="COND19" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM63"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM3" identifier="MSG16" text="MDATreqI(|{param1|=|{id|=ak|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_3" event_type="OPERATION_CALL" color="#000000" text="op(|{param1|=1|})" identifier="_LINK_58"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_3" event_type="OPERATION_RETURN" color="#000000" text="1" identifier="_LINK_59"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="5"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM9" identifier="COND20" background="-" text="begin"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="begin" identifier="COND20" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM9"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="TIMER_TIMEOUT" color="#ffffff" text="time_ak" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM43"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM32" identifier="MSG17" text="MDATreqR(|{param1|=|{id|=dt|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="TIMER_START" color="#ffffff" text="time_ak(5)" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM35"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM34" identifier="COND21" background="-" text="wait_dest"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="wait_dest" identifier="COND21" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM34"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM4" identifier="MSG17" text="MDATreqR(|{param1|=|{id|=dt|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_2" event_type="OPERATION_CALL" color="#000000" text="op(|{param1|=1|})" identifier="_LINK_60"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_2" event_type="OPERATION_RETURN" color="#000000" text="0" identifier="_LINK_61"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM10" identifier="MSG18" text="MDATindR(|{param1|=|{id|=dt|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM11" identifier="COND22" background="-" text="begin"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="begin" identifier="COND22" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM11"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM4" identifier="MSG18" text="MDATindR(|{param1|=|{id|=dt|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM37" identifier="COND23" background="-" text="data_transfert"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="data_transfert" identifier="COND23" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM37"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM52" identifier="MSG19" text="MDATreqI(|{param1|=|{id|=ak|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM63" identifier="COND24" background="-" text="idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="idle" identifier="COND24" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM63"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM3" identifier="MSG19" text="MDATreqI(|{param1|=|{id|=ak|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_3" event_type="OPERATION_CALL" color="#000000" text="op(|{param1|=1|})" identifier="_LINK_62"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_3" event_type="OPERATION_RETURN" color="#000000" text="1" identifier="_LINK_63"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="10"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM9" identifier="COND25" background="-" text="begin"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="15"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="begin" identifier="COND25" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM9"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="TIMER_TIMEOUT" color="#ffffff" text="time_ak" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM43"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="15"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM32" identifier="MSG20" text="MDATreqR(|{param1|=|{id|=dt|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="15"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="TIMER_START" color="#ffffff" text="time_ak(5)" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM35"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="15"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM34" identifier="COND26" background="-" text="wait_dest"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="15"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="wait_dest" identifier="COND26" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM34"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM4" identifier="MSG20" text="MDATreqR(|{param1|=|{id|=dt|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="15"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_2" event_type="OPERATION_CALL" color="#000000" text="op(|{param1|=1|})" identifier="_LINK_64"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="15"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_2" event_type="OPERATION_RETURN" color="#000000" text="0" identifier="_LINK_65"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="15"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM10" identifier="MSG21" text="MDATindR(|{param1|=|{id|=dt|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="15"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_2" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM11" identifier="COND27" background="-" text="begin"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="15"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="begin" identifier="COND27" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium1_proc.rdd*SYM11"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM4" identifier="MSG21" text="MDATindR(|{param1|=|{id|=dt|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="15"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM37" identifier="COND28" background="-" text="data_transfert"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="15"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="data_transfert" identifier="COND28" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM37"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="MESSAGE_SEND" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM52" identifier="MSG22" text="MDATreqI(|{param1|=|{id|=ak|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="15"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_4" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM63" identifier="COND29" background="-" text="idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="15"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="idle" identifier="COND29" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\responder_proc.rdd*SYM63"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="MESSAGE_RECEIVE" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM3" identifier="MSG22" text="MDATreqI(|{param1|=|{id|=ak|,num|=1|,data|=data1|}|})"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="15"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_3" event_type="OPERATION_CALL" color="#000000" text="op(|{param1|=1|})" identifier="_LINK_66"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="15"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_5 LIFELINEID_3" event_type="OPERATION_RETURN" color="#000000" text="1" identifier="_LINK_67"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="15"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_3" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM9" identifier="COND30" background="-" text="begin"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="begin" identifier="COND30" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\medium2_proc.rdd*SYM9"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="TIMER_TIMEOUT" color="#ffffff" text="time_ak" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM43"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent lifeline_ids="LIFELINEID_1" event_type="CONDITION_START" color="#000000" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM49" identifier="COND31" background="-" text="idle"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text="20"/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="CONDITION_END" color="#000000" text="idle" identifier="COND31" model_id="PragmaDevStudio:symbol*d:\users\stéphane\home\etudes\2018\testfonctionnel\tp_note\initiator_proc.rdd*SYM49"/>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+<MscEventRow>
+<MscEvent event_type="ABSOLUTE_TIME" color="#000000" text=""/>
+</MscEventRow>
+</MscDiagram>
