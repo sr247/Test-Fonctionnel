@@ -13,12 +13,6 @@ DCL udata MSDUType;" outline_color="-" background_color="-" center_coordinates="
 timer time_ak;" outline_color="-" background_color="-" center_coordinates="338 60" dimensions="118 48" attached_symbol_id=""/>
 <SdlFSMSymbol identifier="SYM39" type="sdlText" text="DCL attempt_cr integer;
 DCL attempt_dt integer;" outline_color="-" background_color="-" center_coordinates="125 75" dimensions="180 48" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM76" type="sdlComment" text="Dans l'etat wait_dest::Condition(CC) :
-  Ce n est pas dis dans la spec mais on pourrait 
-  tester avant de renvoyer ICONconf si nous somme 
-  deja en mode connexion dans le cas d'un processus
-  responder defaillant, ou simplement pour s'assurer
-  que les specifications sur responder sont respectees" outline_color="-" background_color="-" center_coordinates="699 995" dimensions="398 104" attached_symbol_id=""/>
 <NonStateTransition top_left_coordinates="127 252">
 <SdlFSMSymbol identifier="SYM1" type="sdlStart" outline_color="-" background_color="-" center_coordinates="221 267" dimensions="60 30" attached_symbol_id=""/>
 <Transition>
@@ -58,7 +52,7 @@ DCL attempt_dt integer;" outline_color="-" background_color="-" center_coordinat
 <Transition>
 <SdlFSMSymbol identifier="SYM67" type="sdlTask" text="dataRequest!id := DT" outline_color="-" background_color="-" center_coordinates="852 692" dimensions="160 40" attached_symbol_id=""/>
 <SdlFSMSymbol identifier="SYM68" type="sdlTask" text="dataRequest!num := udata!num" outline_color="-" background_color="-" center_coordinates="852 744" dimensions="216 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM69" type="sdlTask" text="dataRequest!data := data" outline_color="-" background_color="-" center_coordinates="852 796" dimensions="188 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM69" type="sdlTask" text="dataRequest!data := data" outline_color="-" background_color="-" center_coordinates="852 796" dimensions="190 40" attached_symbol_id=""/>
 <SdlFSMSymbol identifier="SYM65" type="sdlCnctrOut" text="dt_retransmit" outline_color="-" background_color="-" center_coordinates="852 848" dimensions="110 40" attached_symbol_id=""/>
 </Transition>
 </DecisionBranch>
@@ -82,7 +76,7 @@ DCL attempt_dt integer;" outline_color="-" background_color="-" center_coordinat
 <DecisionBlock>
 <SdlFSMSymbol identifier="SYM26" type="sdlDecision" text="attempt_cr" outline_color="-" background_color="-" center_coordinates="1218 432" dimensions="90 40" attached_symbol_id=""/>
 <DecisionBranch>
-<SdlFSMSymbol identifier="SYM27" type="sdlAnswer" text="&lt; 5" outline_color="-" background_color="-" center_coordinates="1218 484" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM27" type="sdlAnswer" text="&lt; 4" outline_color="-" background_color="-" center_coordinates="1218 484" dimensions="60 40" attached_symbol_id=""/>
 <Transition>
 </Transition>
 </DecisionBranch>
@@ -103,7 +97,7 @@ DCL attempt_dt integer;" outline_color="-" background_color="-" center_coordinat
 <DecisionBlock>
 <SdlFSMSymbol identifier="SYM45" type="sdlDecision" text="attempt_dt" outline_color="-" background_color="-" center_coordinates="1444 432" dimensions="90 40" attached_symbol_id=""/>
 <DecisionBranch>
-<SdlFSMSymbol identifier="SYM46" type="sdlAnswer" text="&lt; 5" outline_color="-" background_color="-" center_coordinates="1444 484" dimensions="60 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM46" type="sdlAnswer" text="&lt; 4" outline_color="-" background_color="-" center_coordinates="1444 484" dimensions="60 40" attached_symbol_id=""/>
 <Transition>
 </Transition>
 </DecisionBranch>
